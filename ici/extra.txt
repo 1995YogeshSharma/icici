@@ -1,0 +1,65 @@
+codeschool OR pluralsight OR udemy OR lynda OR teamtreehouse -marketing -photography -excel -word -powerpoint -SSCP -VMware -Unity3D -Unity -Writing -Windows -Google -3DS -Schedule -AutoCad -Blender -Apple -Amazon -ZBrush -Adobe -PMP -Hadoop -Cisco -CISSP -CompTIA -SEO category:tutorials
+
+-------------------------------------------------------------------------------------------------------
+
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+	
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+	
+	
+	
+	
+	z-index: 300;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+    /* box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+    -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	
+	    box-shadow: 0 0 24px 0 rgba(0,0,0,0.25);
+    height: 48px;
+	
+----------------------------------------------------------------------------------------------------
+
+    background-image: url("noise.png"), -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 750, color-stop(0%, #f7931e), color-stop(100%, #f15a24));
+    background-image: url("noise.png"), -webkit-radial-gradient(top center, #f7931e, #f15a24 750px);    
+    background-image: url("noise.png"), radial-gradient(top center, #f7931e, #f15a24 750px);
+    width: 100%;
+    background-color: #f7931e;
+
+
+----------------------------------------------------------------------------------------------------	
+
+
+visual sydio code
+
+border-bottom: 1px solid rgba(0,0,0,0.05);
+border-bottom: 1px solid rgba(0,0,0,0.15);
+
+rgba(255,255,255,0.97);
+
+arr = arr.slice(0,3).concat(arr.slice(4))
+
+    background: #f5f5f1;
+    border-top: 1px solid #ccccc8;
+	
+	box-shadow: 0 0 1px rgba(0,0,0,0.15);
+	
+	
+	    background: #298eea;
+    font-family: "proxima-nova";
+	
+	    background: #15CD72;
+		
+		    background: linear-gradient(to right bottom,rgba(68,143,212,0.8),rgba(32,138,189,0.8),rgba(34,43,109,0.85),rgba(30,4,35,0.8));
+			
+			box-shadow: 0 1px 2px rgba(0,0,0,0.6);
+			
+			
+			
