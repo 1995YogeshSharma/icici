@@ -29,9 +29,18 @@
 						</a>
 					</li>-->
 					<li>
-						<a href="login.html">
-							LOGIN
-						</a>
+						@if (Auth::guest())
+							<a href="{{url('/login')}}">
+								LOGIN
+							</a>
+							<a href="{{url('/register')}}">
+								REGISTER
+							</a>
+						@else
+							<a href="{{url('logout')}}">
+								LOGOUT
+							</a>
+						@endif
 					</li>
 				</ul>
 			</nav>
