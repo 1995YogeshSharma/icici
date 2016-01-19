@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Selfie Challenge</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="{{asset('css/animate.min.css')}}" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{asset('css/creative.css')}}" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{{url('/selfie')}}">Selfie Challenge</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        @if (Auth::guest())
+                            <a class="page-scroll" id="loginnn" href="{{url('/login')}}">
+                                LOGIN
+                            </a>
+                        @else
+                            <a href="{{url('logout')}}">
+                                LOGOUT
+                            </a>
+                        @endif
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>The great India selfie challenge</h1>
+                <hr>
+                <p>ICICI Bank presents the ultimate selfie challenge</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">The challenge</h2>
+                    <hr class="light">
+                    <p class="text-faded">
+                        ICICI Bank brings you the great India Selfie challenge. Show us your creativity and upload the funny or adventurous selfies you can think of. Tickle us with youe witty selfies and show us your daring in the ultimate adventure/comedy selfie contest.
+                        <br>
+                        The winners will be decided according to the likes the selfie has in instagram, facebook and on this website. 
+                    </p>
+               <!---
+               no need to keep it if it doesn't affets style
+
+                    <a href="{{url('/login')}}" id="anotherlogin" class="btn btn-default btn-xl">Get Started!</a>
+           -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="{{asset('images/funny1.jpg')}}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Professional Cloud
+                                </div>
+                                <div class="project-name">
+                                    
+Own your cloud, Manage your office, easily work with your collegues & clients
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="{{asset('images/funny3.jpg')}}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Personal Cloud
+
+                                </div>
+                                <div class="project-name">
+                                    Keep your photos, videos, music & documents
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="{{asset('images/funny2.jpg')}}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Small Business Cloud Storage
+
+                                </div>
+                                <div class="project-name">
+                                    Store / Backup & Share, manage team members, collaborate with client & partners easily and from anywhere anytime
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="{{asset('images/adventure2.jpg')}}"  class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                     Go Cloudia
+
+                                </div>
+                                <div class="project-name">
+                                    Get Organized ... Get Syncronized
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="{{asset('images/adventure1.jpg')}}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Go Cloudia
+
+                                </div>
+                                <div class="project-name">
+                                    Get Connected ... Get Organized
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="{{asset('images/adventure3.jpg')}}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Cloud it all
+
+                                </div>
+                                <div class="project-name">
+                                    Save / Store/Sync Online All your Docs,Photos & Albums,Video & Music, office files Word Doc, Excel sheets,PPT presentations
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Show us what you got</h2>
+                <a href="#343" id="yetyetanotherlogin" class="btn btn-default btn-xl wow tada">UPLOAD!</a>
+            </div>
+        </div>
+    </aside>
+
+
+   
+  <!--    
+    <div id="loginmain" style="position: fixed;left: 500px;top:165px;width:300px;height:400px;background-color: #ffffff; border-radius: 10px;opacity: 1.4;z-index: 1;display: none;">
+        
+        <div id="loginwithfb">
+            <a href="http://www.fb.com"> <img  src="login_fb.png" style="width:250px;position:relative;left:28px;height:45px;top:10px;" > </a>
+        </div>
+        <div id="loginwithg">
+            <a href="http://www.google.com"> <img  src="login_g.png" style="width:250px;position:relative;left:28px;height:45px;top:10px;" > </a>
+        </div>
+        <div id="normal">
+            
+            <img  src="faltu.png" style="width:250px;position:relative;left:28px;height:35px" >
+            
+            <br>
+            <br>
+            <form method="post" action="../mycloudia/index_login_ashish.php">
+                <input type="text"  style="position:relative;left:30px;width:250px;height:45px;" name="username" id="username" Placeholder="Username">
+                <br>
+                <br>
+            
+                <input type="password" style="position:relative;left:30px;width:250px;height:45px;" name="password" id="password" Placeholder="Password">
+                <br>
+                <br>
+                
+                <input type="submit" style="position:relative;left:110px;" class='loginbutton'></input>
+
+            </form>
+        </div> 
+</div>
+
+<div id="vanish" style="position: relative;top:-3045px;width:1345px;background-color: #000000;height:3100px;opacity: 0.8;display:none">
+    </div>
+<div id="vanishagain" style="position: relative;top:-3045px;width:1345px;background-color: #000000;height:3100px;opacity: 0.8;display:none">
+    </div>
+<div id="yetvanishagain" style="position: relative;top:-3045px;width:1345px;background-color: #000000;height:3100px;opacity: 0.8;display:none">
+    </div>
+
+<div id="yetyetvanishagain" style="position: relative;top:-3045px;width:1345px;background-color: #000000;height:3100px;opacity: 0.8;display:none">
+    </div>
+
+    -->
+<script>
+
+document.getElementById("loginnn").onclick = function() {
+document.getElementById("loginmain").style.display ='';
+document.getElementById("vanish").style.display ='';
+};
+
+document.getElementById("vanish").onclick = function(){
+document.getElementById("loginmain").style.display='none';
+document.getElementById("vanish").style.display='none';
+};
+
+document.getElementById("anotherlogin").onclick = function() {
+document.getElementById("loginmain").style.display ='';
+document.getElementById("loginmain").style.top ='165px';
+document.getElementById("vanishagain").style.display ='';
+//document.getElementById("vanishagain").style.top="-2430px"
+};
+
+document.getElementById("vanishagain").onclick = function(){
+document.getElementById("loginmain").style.display='none';
+document.getElementById("loginmain").style.top='165px';
+document.getElementById("vanishagain").style.display='none';
+};
+
+
+document.getElementById("yetanotherlogin").onclick = function() {
+document.getElementById("loginmain").style.display ='';
+document.getElementById("loginmain").style.top ='1150px';
+document.getElementById("yetvanishagain").style.display ='';
+//document.getElementById("vanishagain").style.top="-2430px"
+};
+
+document.getElementById("yetvanishagain").onclick = function(){
+document.getElementById("loginmain").style.display='none';
+document.getElementById("loginmain").style.top='165px';
+document.getElementById("yetvanishagain").style.display='none';
+};
+
+
+
+document.getElementById("yetyetanotherlogin").onclick = function() {
+document.getElementById("loginmain").style.display ='';
+document.getElementById("loginmain").style.top ='1850px';
+document.getElementById("yetyetvanishagain").style.display ='';
+//document.getElementById("vanishagain").style.top="-2430px"
+};
+
+document.getElementById("yetyetvanishagain").onclick = function(){
+document.getElementById("loginmain").style.display='none';
+document.getElementById("loginmain").style.top='165px';
+document.getElementById("yetyetvanishagain").style.display='none';
+};
+
+</script>
+    <!-- jQuery -->
+    <script src="{{asset('js/jquery.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{asset('js/jquery.easing.min.js')}}"></script>
+    <script src="{{asset('js/jquery.fittext.js')}}"></script>
+    <script src="{{asset('js/wow.min.js')}}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{asset('js/creative.js')}}"></script>
+
+</body>
+
+</html>

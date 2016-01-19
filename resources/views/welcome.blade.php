@@ -33,9 +33,7 @@
 							<a href="{{url('/login')}}">
 								LOGIN
 							</a>
-							<a href="{{url('/register')}}">
-								REGISTER
-							</a>
+							
 						@else
 							<a href="{{url('logout')}}">
 								LOGOUT
@@ -59,7 +57,7 @@
 				<div class="row">
 					<div class="card w50" id="card1">
 						<div class="card_front">
-							<div class="head"><a href="EVENTS.html">Events</a></div>
+							<div class="head"><a href="{{url('/events')}}">Events</a></div>
 						</div>
 						<div class="card_back">
 							<div class="gallery2">
@@ -72,7 +70,7 @@
 								  <img src="{{asset('images/dubsmash.jpg')}}" alt="" /></a>
 								</div>
 							</div>
-							<div id="event-btn"><a href="events.html">All Events</a></div>
+							<div id="event-btn"><a href="{{url('/events')}}">All Events</a></div>
 						</div>
 					</div>
 					<div class="row">
