@@ -19,7 +19,7 @@
 	<body>
 		<header class="header-common">
 			<div class="header-member logo">
-				<a href="index.html">Discover Your Passion</a>
+				<a href="{{url('/')}}">Discover Your Passion</a>
 			</div>
 			<nav class="header-member link-bar">
 				<ul>
@@ -57,32 +57,32 @@
 				<div class="row">
 					<div class="card w50" id="card1">
 						<div class="card_front">
-							<div class="head"><a href="{{url('/events')}}">Events</a></div>
+							<div class="head"><a href="{{url('/events')}}"></a></div>
 						</div>
 						<div class="card_back">
-							<div class="gallery2">
+							<!--<div class="gallery2">
 								<div class="gallery-member">
-									<a href="EVENTS.html">
+									<a href="{{url('/events')}}">
 								  <img src="{{asset('images/creativemasters.png')}}" alt="" />
 									</a>
 								</div>
-								<div class="gallery-member"><a href="EVENTS.html">
+								<div class="gallery-member"><a href="{{url('/events')}}">
 								  <img src="{{asset('images/dubsmash.jpg')}}" alt="" /></a>
 								</div>
-							</div>
+							</div>-->
 							<div id="event-btn"><a href="{{url('/events')}}">All Events</a></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="card h100" id="card2">
 							<div class="card_front">
-								<div class="head">Hall of Fame</div>
+								<div class="head"></div>
 							</div>
 							<div class="card_back"></div>
 						</div>
 						<div class="card h100"id="card3">
 							<div class="card_front">
-								<div class="head">Testimonials</div>
+								<div class="head"></div>
 							</div>
 							<div class="card_back">
 								<div class="head"></div>
@@ -93,13 +93,13 @@
 				<div class="row">
 					<div class="card w33" id="card4">
 						<div class="card_front">
-							<div class="head">Contact Us</div>
+							<div class="head"></div>
 						</div>
 						<div class="card_back"></div>
 					</div>
 					<div class="card w33" id="card5">
 						<div class="card_front">
-							<div class="head">Sponsor</div>
+							<div class="head"></div>
 						</div>
 						<div class="card_back">
 							<div class="gallery1">

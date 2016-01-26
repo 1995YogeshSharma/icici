@@ -43,7 +43,7 @@
 			<div id="overlay"></div>
 			<div id="events_main">
 				<div class="cont_" id="id1"><div>
-					<div class="heading">Creative Masters</div>
+					<div class="heading"><img src="{{asset('images/event_creative.jpg')}}"/></div>
 					<div class="info">
 						<span>CREATIVE MASTERS</span>
 						ICICI Bank Limited proudly presents Creative Masters – the drawing contest that celebrates the artist within you is back with its 2nd edition and urges you to “Share What You Care About”.
@@ -51,7 +51,7 @@
 					</div>
 				</div></div>
 				<div class="cont_"id="id2"><div>
-					<div class="heading">Selfie Challenge</div>
+					<div class="heading"><img src="{{asset('images/event_selfie.jpg')}}" /></div>
 					<div class="info">
 						<span>ULTIMATE SELFIES</span>Show us your creativity and upload the most funny or adventurous selfies you can think of. Tickle us with your witty 
 						selfies and show us your daring in the ultimate adventure selfie contest. 
@@ -59,7 +59,7 @@
 					</div>
 				</div></div>
 				<div class="cont_"id="id4"><div>
-					<div class="heading">Cameraderie</div>
+					<div class="heading"><img src="{{asset('images/event_cameraderie.jpg')}}" /></div>
 					<div class="info">
 						<span>CAMERADERIE</span>
 						Welcome onboard the 3rd edition of Cameraderie contest which is a celebration of the passion for photography. With many more categories to submit photographs, this edition for the first time is introducing Videography contest to complete the magic that can be captured by a camera lens.
@@ -67,7 +67,7 @@
 					</div>
 				</div></div>
 				<div class="cont_"id="id5"><div>
-					<div class="heading">Pranks</div>
+					<div class="heading"><img src="{{asset('images/event_pranks.jpg')}}" /></div>
 					<div class="info"></div>
 				</div></div>
 			</div>
