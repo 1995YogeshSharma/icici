@@ -212,7 +212,7 @@ Own your cloud, Manage your office, easily work with your collegues & clients
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Show us what you got</h2>
-                <a href="#343" id="yetyetanotherlogin" class="btn btn-default btn-xl wow tada">UPLOAD!</a>
+                <a href="{{url('/imageUploadForm')}}" id="yetyetanotherlogin" class="btn btn-default btn-xl wow tada">UPLOAD!</a>
             </div>
         </div>
     </aside>

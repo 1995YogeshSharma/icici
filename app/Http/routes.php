@@ -15,16 +15,31 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+//redirecting to the events main page
 Route::get('/events', function()
 {
 	return view('events');
 
 });
 
+
+//redirecting to the selfie challenge main page
 Route::get('/selfie', function()
 {
 	return view('selfie');
 });
+
+
+//redirecting to image upload page
+Route::get('/imageUploadForm', 'ImageController@upload');
+
+//redirecting the form post to store method
+Route::post('/imageUploadForm','ImageController@store');
+
+//showing the list of the stored images (later to be converted to admin side feature
+Route::get('/showLists', 'ImageController@show');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
